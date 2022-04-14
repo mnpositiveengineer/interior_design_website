@@ -1,0 +1,110 @@
+#contact{
+	padding-top: 50px;
+}
+
+.bg-footer{
+	background-image: url("../img/tlo.png");
+	background-size: cover;
+	min-height: 400px;
+	width: 100%;
+}
+.wrapper {
+	min-height: 400px !important;
+}
+.logo {
+	max-width:215px !important;
+	min-width:215px !important;
+	max-height: 100px !important;
+	min-height: 100px !important;
+}
+
+.portret {
+	max-width:215px !important;
+	min-width:215px !important;
+	max-height: 215px !important;
+	min-height: 215px !important;
+}
+@media(min-width:1171px)
+{
+.wrapper {
+	max-width: 1130px;
+}	
+.logo {
+	margin-right: 150px;
+}
+.contact {
+	margin-right: 150px;
+}
+}
+@media(min-width:991px) and (max-width: 1170px)
+{
+.wrapper {
+	max-width: 900px;
+}	
+.logo {
+	margin-right: 70px;
+}
+.contact {
+	margin-right: 70px;
+}
+}
+@media(max-width:990px)
+{
+.bg-footer {
+	min-height: 650px;
+}	
+.logo {
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 40px !important;
+}
+.contact {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px !important;
+}
+
+.portret {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px !important;
+}
+}
+
+.contact ol {
+	list-style-type:none;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	color: #fff;
+	padding:0;
+}
+.contact ol > li {
+	padding-top: 10px;
+}
+
+.footer {
+	height: 50px;
+	background-color: rgba(208, 194, 189, 100);
+	margin-bottom:0px;
+	color:#fff;
+	position: relative;
+	font-size: 12px;
+}
+
+.finish {
+	position:absolute; 
+	top: 30%;
+	width: fit-content;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@media(max-width:600px)
+{
+.finish{
+	font-size: 9px;
+	top:40% !important;
+}
+}

@@ -1,0 +1,116 @@
+#logo {
+	width:162px;
+	height:75px;
+	position: absolute;
+	top:30px;
+	left:50px;
+}
+
+@media(max-width:1250px) 
+{
+	#logo {
+		width:81px;
+		height:37.5px;
+		top:15px;
+		left:25px;
+	}
+}
+
+#gallery {
+	position: relative;
+	width: 90%;
+	margin: auto;
+}
+
+#chevron_right {
+	position: absolute;
+	height: 100%;
+	width: 50px;
+	right: 0;
+	background-color: rgba(242, 240, 238, 100);
+	opacity: 0.5;
+	cursor: pointer;
+	-webkit-transition: opacity 0.3s ease-in-out;
+}
+
+#chevron_right i {
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	font-size: 20px;
+}
+
+#chevron_left {
+	position: absolute;
+	height: 100%;
+	width: 50px;
+	left: 0;
+	background-color: rgba(242, 240, 238, 100);
+	opacity: 0.5;
+	cursor: pointer;
+	-webkit-transition: opacity 0.3s ease-in-out;
+}
+
+#chevron_left i {
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	font-size: 20px;
+}
+
+#chevron_left:hover {
+	opacity: 0.7;
+}
+
+#chevron_right:hover {
+	opacity: 0.7;
+}
+
+@media(max-width:992px) 
+{
+	#chevron_right:hover {
+		opacity: 0.5;
+	}
+	#chevron_left:hover {
+		opacity: 0.5;
+	}
+}
+
+@media(max-width:600px) 
+{
+	#chevron_left {
+		width: 30px;
+	}
+	#chevron_right {
+		width: 30px;
+	}
+	#chevron_left i {
+		left: 7px;
+		font-size: 15px;
+	}
+	#chevron_right i {
+		left: 7px;
+		font-size: 15px;
+	}
+}
+
+.dot {
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	margin: 20px 10px;
+	background-color: rgba(208, 194, 189, 100);
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	margin-top: 30px;
+  }
+
+.dot.active {
+	background-color: rgba(198, 163, 97, 100);
+  }
+  
+.dot:hover {
+	background-color: rgba(198, 163, 97, 100);
+  }
+

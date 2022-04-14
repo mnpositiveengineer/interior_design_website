@@ -1,0 +1,169 @@
+#logo {
+	width:162px;
+	height:75px;
+	position: absolute;
+	top:30px;
+	left:50px;
+}
+
+@media(max-width:1250px) 
+{
+	#logo {
+		width:81px;
+		height:37.5px;
+		top:15px;
+		left:25px;
+	}
+}
+
+
+@media(max-width:500px) 
+{
+	#logo {
+		display: none;
+	}
+}
+
+#front_img img:last-child {
+	display: none;
+} 
+
+@media(max-width:992px) 
+{
+#front_img img:first-child {
+	display: none;
+} 
+#front_img img:last-child {
+	display: flex;
+} 
+}
+
+#menu {
+	min-height:70px;
+	min-width: 100% !important;
+	padding:0;
+	font-size: 15px !important;
+	letter-spacing: 2px !important;
+	font-weight: bold;
+	color: #000;
+	display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+	top: 0px;
+	z-index:100;
+	position: fixed;
+}
+
+@media(min-width:993px) 
+{
+#large_menu {
+	display:block !important;
+}
+}
+
+#menu.background {
+	background-color: rgba(242, 240, 238, 100);
+}
+
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu li {
+	display: inline-block;
+}
+
+#menu li:hover {
+	text-decoration: underline;
+}
+
+#menu li.active {
+	text-decoration: underline;
+}
+
+#small_menu {
+	display: none;
+}
+
+#small_menu li {
+	padding-right: 70px;
+	display: inline-block;
+}
+
+#small_menu li:last-child {
+	padding-right: 0;
+}
+
+
+@media(max-width:992px) 
+{
+
+#menu {
+	min-height:50px;
+}
+#small_menu {
+	display: block;
+	min-height:50px;
+	display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+	transition: background-color 0.4s ease-in-out;
+}
+
+#large_menu {
+	text-align: center;
+	height: 100%;
+	width: 100vh;
+	background-color:  rgba(242, 240, 238, 100);
+	transform: translateY(-150%);
+	transition: transform 0.4s ease-in-out;
+	display: none;
+}
+
+#large_menu.active {
+	transform: translateY(0%);
+	transition: transform 0.4s ease-in-out;
+}
+
+#large_menu li {
+	display: block;
+	padding: 20px;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+#large_menu li:last-child {
+	display: none;
+}
+#large_menu li:nth-last-child(2) {
+	display: none;
+}
+
+i:hover {
+	color: #000;
+}
+}
+
+.arrow {
+	display:none;
+}
+.arrow-appear {
+	position: fixed;
+	bottom:70px;
+	left:30px;
+	display: block;
+}
+
